@@ -5,7 +5,7 @@
 # Must be run as root
 
 if [ "$EUID" -ne 0 ]; then 
-    echo "Please run as root"
+    echo "You must run this script as root."
     exit 1
 fi
 
