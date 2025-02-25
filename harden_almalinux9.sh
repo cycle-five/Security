@@ -5,9 +5,8 @@
 # Must be run as root
 #I will add comments to these from now on so I don't casually forget to install audit, but then try to configure
 
-# Check if running as root
 if [ "$EUID" -ne 0 ]; then 
-    echo "Please run as root"
+    echo "You must run this script as root."
     exit 1
 fi
 
