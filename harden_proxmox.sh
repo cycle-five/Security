@@ -4,9 +4,8 @@
 # This script implements security measures for Proxmox Virtual Environment
 # Must be run as root on Proxmox VE node
 
-# Check if running as root
 if [ "$EUID" -ne 0 ]; then 
-    echo "Please run as root"
+    echo "You must run this script as root."
     exit 1
 fi
 
