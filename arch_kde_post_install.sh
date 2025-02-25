@@ -4,7 +4,6 @@
 # This script sets up and configures an Arch Linux system with KDE Plasma
 # Must be run as root
 
-# Check if running as root
 if [ "$EUID" -ne 0 ]; then 
     echo "You must run this script as root."
     exit 1
